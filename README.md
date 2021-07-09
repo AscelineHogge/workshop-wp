@@ -69,6 +69,6 @@ Si tout s'est bien passé, l'installation de Wordpress va démarrer et vous dema
 - L'adresse de la base de données
 - Préfixe de la base de données (pas besoin de le changer)
 
-## 4. Terminez l'installation
+## 4. Fin des explications
 
 Vous avez alors créé votre site Wordpress et vous pouvez vous y connecter.
