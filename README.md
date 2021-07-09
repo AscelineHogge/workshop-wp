@@ -15,7 +15,11 @@ Il y a plusieurs possibilités pour configurer votre environnement.
 
 Pour mon workshop, je vais utiliser Docker et je vous invite à faire de même mais vous pouvez aussi utiliser XAMPP ou encore LAMP. Je ne vais juste pas expliquer comment les utiliser.
 
-Pour l'installer, copiez le dossier "*wordpress*" ainsi que le fichier "*docker-compose*", présents dans le repo, pour les mettre dans un dossier créé au préalable.
+Créez un dossier où vous allez mettre le projet.
+
+Ensuite, télécharger le dossier "*wordpress*" ainsi que le fichier "*docker-compose*" sur [Drive](https://drive.google.com/drive/folders/1M6Oz5RZz-BT5SBOXb6OfNTmxaKktHrgS?usp=sharing).
+
+Mettez le tout dans un dossier créé au préalable.
 
 A l'intérieur de ce dossier, il faut mettre "*docker-compose build*" puis "*docker-compose up*" dans le terminal. Faites le bien dans cet ordre !
 
