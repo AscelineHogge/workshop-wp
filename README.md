@@ -9,15 +9,15 @@ Il est recommandé d'installer un serveur HTTP, Apache or Nginx. Personnellement
 
 Nous avons aussi besoin de PHP et de MySQL.
 
-Il y a plusieurs possibilités pour configurer votre environnement et je conseille Docker.
+Il y a plusieurs possibilités pour configurer votre environnement.
 
 ### 1.1. Docker et Installation Wordpress.
 
-Pour mon workshop, je vais utiliser Docker et je vous invite à faire de même mais vous pouvez aussi utiliser XAMPP ou encore LAMP.
+Pour mon workshop, je vais utiliser Docker et je vous invite à faire de même mais vous pouvez aussi utiliser XAMPP ou encore LAMP. Je ne vais juste pas expliquer comment les utiliser.
 
-Pour l'installer, copiez le dossier "wordpress" ainsi que le fichier "docker-compose" présent dans le repo pour les mettre dans un dossier créé au préalable.
+Pour l'installer, copiez le dossier "*wordpress*" ainsi que le fichier "*docker-compose*", présents dans le repo, pour les mettre dans un dossier créé au préalable.
 
-Une fois fait, il faut rentrer "docker-compose build" puis "docker-compose up" dans le terminal (dans le bon dossier). Faites le bien dans cet ordre !
+A l'intérieur de ce dossier, il faut mettre "*docker-compose build*" puis "*docker-compose up*" dans le terminal. Faites le bien dans cet ordre !
 
 ## 2. La base de données et wp-config.php
 
@@ -30,16 +30,16 @@ Puis, ajoutez une nouvelle base de données.
 Exemple :
 
 - Nom de base de données : `wordpress`
-- Interclassement : `utf8_unicode_ci`
+- Interclassement : `utf8_general_ci`
 
-2. Dans votre dossier, ouvrez le fichier `wp-config.php` et changez les informations pour la connexion avec votre BdD. 
+2. Dans le dossier wordpress recopié, ouvrez le fichier `wp-config.php` et changez les informations pour la connexion avec votre BdD. 
 
 Exemple :
 
 ```php
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'firstWordPress');
+define('DB_NAME', 'siteWordpress');
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
