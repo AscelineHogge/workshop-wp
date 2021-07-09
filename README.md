@@ -3,7 +3,7 @@ Voici la manière que j'utilise et que j'ai appris au sein de BeCode.
 
 ## 1. Configurez votre environnement
 
-Avant l'installation, vérifié si Ubuntu est à jour en faisant "apt-get" ou "apt update" dans le terminal. 
+> Avant l'installation, vous devez vérifier si Ubuntu est à jour en faisant "*apt-get*" ou "*apt update*" dans le terminal. 
 
 Il est recommandé d'installer un serveur HTTP, Apache or Nginx. Personnellement, j'utilise Apache.
 
