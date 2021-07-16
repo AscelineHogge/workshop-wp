@@ -17,13 +17,13 @@ Pour mon workshop, je vais utiliser Docker et je vous invite à faire de même m
 
 Créez un dossier où vous allez mettre le projet.
 
-Clonez ensuite mon repo et avant de recuperer le dossier "wordpress" et le fichier "docker-compose.yml"
+Clonez ensuite mon repo avant de récuperer le dossier "wordpress" et le fichier "docker-compose.yml".
 
 Mettez le tout dans un dossier créé au préalable.
 
-A l'intérieur de ce dossier, il faut mettre "*docker-compose build*" puis "*docker-compose up -d*" dans le terminal. Faites le bien dans cet ordre !
+A l'intérieur de ce dossier, écrivez "*docker-compose build*" puis "*docker-compose up*" dans le terminal. Faites le bien dans cet ordre !
 
-> Pour vous déconnecter de Docker, vous suffit d'utiliser "*docker-compose down*"
+> Pour vous déconnecter de Docker, vous suffit de faire : Ctrl + C
 
 ## 2. La base de données et wp-config.php
 
@@ -36,34 +36,33 @@ Puis, ajoutez une nouvelle base de données.
 Exemple :
 
 - Nom de base de données : `wordpress`
-- Interclassement : `utf8_general_ci`
+- Interclassement : `utf8_unicode_ci`
 
 2. Dans le dossier wordpress recopié, ouvrez le fichier `wp-config.php` et changez les informations pour la connexion avec votre base de données. 
+
+> Allez directement à la ligne 24 pour les modifications.
 
 Exemple :
 
 ```php
-//  MySQL settings - You can get this info from your web host  //
-/ The name of the database for WordPress */
-define('DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'name_project'));
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress' );
 
-/ MySQL database username */
-define('DB_USER', getenv_docker('WORDPRESS_DB_USER', 'root'));
+/** MySQL database username */
+define( 'DB_USER', 'root' );
 
-/ MySQL database password */
-define('DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'root'));
+/** MySQL database password */
+define( 'DB_PASSWORD', 'root' );
 
-/ MySQL hostname */
-define('DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql'));
+/** MySQL hostname */
+define( 'DB_HOST', 'mysql' );
 
-/ Pour permettre d'installer des plugins sur Linux */
-define('FS_METHOD', 'direct');
-
-/ Database Charset to use in creating database tables. */
-define('DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8'));
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', ''));
+define( 'DB_COLLATE', '' );
 
 ```
 

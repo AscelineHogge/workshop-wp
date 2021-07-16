@@ -21,22 +21,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'name_project'));
+define('DB_NAME', 'database_name_here');
 
 /** MySQL database username */
-define('DB_USER', getenv_docker('WORDPRESS_DB_USER', 'root'));
+define('DB_USER', 'username_here');
 
 /** MySQL database password */
-define('DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'root'));
+define('DB_PASSWORD', 'password_here');
 
 /** MySQL hostname */
-define('DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql'));
+define('DB_HOST', 'mysql');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8'));
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', ''));
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -79,6 +79,7 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define('WP_DEBUG', false);
+define('FS_METHOD', 'direct');
 
 /* That's all, stop editing! Happy publishing. */
 
